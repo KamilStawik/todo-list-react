@@ -2,7 +2,7 @@
 
 ## Demo
 
-[To-do-list by Kamil](https://kamilstawik.github.io/to-do-list/)
+[To-do-list by Kamil](https://kamilstawik.github.io/todo-list-react/)
 
 ![Project screenshot1](/images/screenshot1.jpg)
 
@@ -24,6 +24,7 @@ Also two new buttons: hide all done tasks and mark all tasks as done.
 * BEM
 * CamelCase
 * Immutability
+
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

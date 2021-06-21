@@ -1,0 +1,27 @@
+.section__headerContainer {
+    background-color: hsl(0, 0%, 100%);
+    margin-top: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+    .section__headerContainer {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.section__header {
+    padding-left: 20px;
+    margin: 0px;
+    flex-basis: 51%;
+}
+
+
+@media (max-width: 767px) {
+    .section__header {
+        flex-basis: 100%;
+    }
+}

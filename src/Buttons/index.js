@@ -7,7 +7,7 @@ const Buttons = (props) => {
         return (
             <div className="buttons__buttonsContainer">
                 <button className="buttons">
-                    {props.hideDoneTasks === false ? "Ukryj ukończone" : "Pokaż ukończone"}
+                    {props.hideDone === false ? "Ukryj ukończone" : "Pokaż ukończone"}
                 </button>
                 <button
                     className="buttons"

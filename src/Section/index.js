@@ -9,8 +9,6 @@ const Section = ({ title, body, extraContent }) => (
             {extraContent}
         </div>
         {body}
-
-
     </section>
 );
 

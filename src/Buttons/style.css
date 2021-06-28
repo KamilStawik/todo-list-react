@@ -6,7 +6,6 @@
 @media (max-width: 767px) {
     .buttons__buttonsContainer {
         flex-direction: column;
-        align-self: center;
     }
 }
 

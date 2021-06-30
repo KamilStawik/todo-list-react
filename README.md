@@ -15,6 +15,7 @@ Hi! My name is Kamil. At the begining of 2021 I had a briliant idea. I started t
 This is my third study project - Task List.
 I applied basic capabilities adding, removing and marking tasks as done.
 Also two new buttons: hide all done tasks and mark all tasks as done.
+Next thing I added to my Task List is local storage. Tasks added to list are being saved on client-side.
 
 ## Technologies and conventions used in project:
 * HTML

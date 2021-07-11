@@ -19,10 +19,7 @@ function App() {
         addNewTask,
     } = useTasks();
 
-    useTasks(tasks);
-
     return (
-
         <Container>
             <Header title="Lista zadań" />
 

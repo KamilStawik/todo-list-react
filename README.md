@@ -22,13 +22,12 @@ Next thing I added to my Task List is local storage. Tasks added to list are bei
 * CSS
 * javascript
 * React.js
-* BEM
+* Styled-components
+* Custom Hooks
 * CamelCase
 * Immutability
+* [Create React App](https://github.com/facebook/create-react-app).
 
-
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 

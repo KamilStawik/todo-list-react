@@ -5,8 +5,8 @@ export const StyledButtons = styled.div`
     justify-content: center;
 
     @media (max-width: 767px) {
-            flex-direction: column;
-        }
+        flex-direction: column;
+    }
 `;
 
 export const Button = styled.button`

@@ -1,51 +1,6 @@
 import React from "react";
-import Form from "./Form";
-import Tasks from "./Tasks";
-import Buttons from "./Buttons";
-import Section from "./Section";
-import Header from "./Header";
-import { Container } from "./Container";
-import { useTasks } from "./useTasks";
+import Tasks from "./features/tasks/Tasks.js"
 
-function App() {
-
-    const {
-        tasks,
-        hideDone,
-        toggleHideDone,
-        removeTask,
-        toggleTaskDone,
-        setAllDone,
-        addNewTask,
-    } = useTasks();
-
-    return (
-        <Container>
-            <Header title="Lista zadań" />
-
-            <Section
-                title="Dodaj nowe zadanie"
-                body={<Form addNewTask={addNewTask} />}
-            />
-
-            <Section
-                title="Lista zadań"
-                body={<Tasks
-                    tasks={tasks}
-                    hideDone={hideDone}
-                    removeTask={removeTask}
-                    toggleTaskDone={toggleTaskDone}
-                />}
-
-                extraContent={<Buttons
-                    tasks={tasks}
-                    hideDone={hideDone}
-                    toggleHideDone={toggleHideDone}
-                    setAllDone={setAllDone}
-                />}
-            />
-        </Container>
-    );
-};
+const App = () => <Tasks />;
 
 export default App;

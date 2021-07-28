@@ -8,7 +8,7 @@ export const StyledTasks = styled.ul`
 `;
 
 export const ListItem = styled.li`
-    border-bottom: hsl(0, 0%, 93%) solid 1px;
+    border-bottom: 1px solid ${({ theme }) => (theme.colors.backgroundColor)}px;
     margin-top: 15px;
     padding: 10px;
     display: flex;
@@ -33,26 +33,26 @@ export const Button = styled.button`
     border: none;
     width: 30px;
     height: 30px;
-    background-color: hsl(120, 100%, 25%);
-    color: rgb(255, 255, 255);
+    background-color: ${({ theme }) => (theme.colors.greenButtonColor)};
+    color: hsl(0, 0%, 100%);
     font-weight: bold;
     flex-shrink: 0;
     transition: 0.5s;
     cursor: pointer;
 
     ${({ toggleDone }) => toggleDone && css`
-        background-color: hsl(120, 100%, 25%);
+        background-color: ${({ theme }) => (theme.colors.greenButtonColor)};
 
         &:hover {
-            background-color: hsl(120, 100%, 30%);
+            filter: brightness(110%)
         }
     `}
 
     ${({ remove }) => remove && css`
-        background-color: hsl(0, 100%, 50%);
+        background-color: ${({ theme }) => (theme.colors.redButtonColor)};
 
         &:hover {
-            background-color: hsl(0, 100%, 60%);
+            filter: brightness(110%)
         }
     `} 
 `;

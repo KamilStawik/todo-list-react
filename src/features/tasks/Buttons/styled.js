@@ -4,7 +4,7 @@ export const StyledButtons = styled.div`
     display: flex;
     justify-content: center;
 
-    @media (max-width: 767px) {
+    @media (max-width: ${({ theme }) => (theme.breakPoints.mobile)}px) {
         flex-direction: column;
     }
 `;
@@ -12,18 +12,18 @@ export const StyledButtons = styled.div`
 export const Button = styled.button`
     border: none;
     background-color: hsl(0, 0%, 100%);
-    color: hsl(180, 100%, 25%);
+    color: ${({ theme }) => (theme.colors.primaryColor)};
     margin: 10px 20px 10px 0px;
     transition: 0.5s;
     cursor: pointer;
 
     &:hover {
-        color: hsl(180, 100%, 35%);
+        filter: brightness(110%);
     }
     &:active {
-        color: hsl(180, 100%, 45%);
+        filter: brightness(120%);;
     }
     &:disabled {
-        color: hsl(0, 0%, 80%);
+        color: ${({ theme }) => (theme.colors.disabledColor)};
     }
 `;

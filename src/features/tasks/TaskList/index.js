@@ -23,6 +23,6 @@ const TaskList = () => {
             ))}
         </StyledTasks>
     );
-}
+};
 
 export default TaskList;

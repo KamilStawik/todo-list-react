@@ -13,7 +13,7 @@ const TaskList = () => {
                     <Button onClick={() => dispatch(toggleTaskDone(task.id))} toggleDone>
                         {task.done ? "✓" : ""}
                     </Button>
-                    <Content done={task.done && hideDone}>
+                    <Content done={task.done}>
                         {task.content}
                     </Content>
                     <Button onClick={() => dispatch(removeTask(task.id))} remove>

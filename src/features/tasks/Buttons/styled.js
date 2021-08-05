@@ -21,9 +21,11 @@ export const Button = styled.button`
         filter: brightness(110%);
     }
     &:active {
-        filter: brightness(120%);;
+        filter: brightness(120%);
     }
-    &:disabled {
+    &&:disabled {
         color: ${({ theme }) => (theme.colors.disabledColor)};
+        filter: brightness(100%);
+        cursor: auto;
     }
 `;

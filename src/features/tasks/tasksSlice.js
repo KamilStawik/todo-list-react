@@ -5,6 +5,7 @@ const tasksSlice = createSlice({
     initialState: {
         tasks: [],
         hideDone: false,
+        status: "ready",
     },
     reducers: {
         addTask: ({ tasks }, { payload: task }) => {
@@ -24,12 +25,34 @@ const tasksSlice = createSlice({
         setAllDone: ({ tasks }) => {
             tasks.forEach(task => task.done = true);
         },
+        fetchExampleTasks: () => { },
+        setTasks: (state, { payload }) => {
+            state.tasks = payload;
+        },
+        setStateAsLoading: state => {
+            state.status = "loading";
+        },
+        setStateAsReady: state => {
+            state.status = "ready";
+        },
     },
 });
 
 const selectTasksState = state => state.tasks;
 
-export const { addTask, toggleHideDone, toggleTaskDone, removeTask, setAllDone } = tasksSlice.actions;
+export const {
+    addTask,
+    toggleHideDone,
+    toggleTaskDone,
+    removeTask,
+    setAllDone,
+    fetchExampleTasks,
+    setTasks,
+    setStateAsLoading,
+    setStateAsReady,
+} = tasksSlice.actions;
+
 export const selectTasks = state => selectTasksState(state).tasks;
 export const selectHideDone = state => selectTasksState(state).hideDone;
+export const selectStatus = state => selectTasksState(state).status;
 export default tasksSlice.reducer;

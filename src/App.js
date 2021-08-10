@@ -1,29 +1,37 @@
 import React from "react";
-import { BrowserRouter, Link, Switch, Route } from "react-router-dom";
-import Author from "./features/author/Author.js";
-import Tasks from "./features/tasks/Tasks.js"
+import { HashRouter, NavLink, Link, Switch, Route, Redirect } from "react-router-dom";
+import { StyledNav, ListItem, UnorderedList, StyledLink } from "./styled.js";
+import AuthorPage from "./features/author/AuthorPage.js";
+import TaskPage from "./features/tasks/TaskPage/index.js"
+import TasksPage from "./features/tasks/TasksPage/index.js"
 
 const App = () => (
-    <BrowserRouter>
+    <HashRouter>
         <nav>
-            <ul>
-                <li>
-                    <Link to="/zadania">Zadania</Link>
-                </li>
-                <li>
+            <UnorderedList>
+                <ListItem>
+                    <NavLink activeClassName="active" to="/zadania">Zadania</NavLink>
+                </ListItem>
+                <ListItem>
                     <Link to="/autor">O autorze</Link>
-                </li>
-            </ul>
+                </ListItem>
+            </UnorderedList>
             <Switch>
+                <Route exact path="/zadania/:id">
+                    <TaskPage />
+                </Route>
                 <Route path="/zadania">
-                    <Tasks />
+                    <TasksPage />
                 </Route>
                 <Route path="/autor">
-                    <Author />
+                    <AuthorPage />
+                </Route>
+                <Route path="/">
+                    <Redirect to="zadania" />
                 </Route>
             </Switch>
         </nav>
-    </BrowserRouter>
+    </HashRouter>
 );
 
 export default App;

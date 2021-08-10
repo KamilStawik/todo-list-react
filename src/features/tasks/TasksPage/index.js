@@ -1,13 +1,13 @@
-import { Container } from "../../common/Container";
+import { Container } from "../../../common/Container";
 import Form from "./Form";
 import TaskList from "./TaskList";
 import Buttons from "./Buttons";
-import Section from "../../common/Section";
-import Header from "../../common/Header";
+import Section from "../../../common/Section";
+import Header from "../../../common/Header";
 
 const exampleTasksButton = true;
 
-const Tasks = () => (
+const TasksPage = () => (
     <Container>
         <Header title="Lista zadań" />
         <Section
@@ -23,4 +23,4 @@ const Tasks = () => (
     </Container>
 );
 
-export default Tasks;
+export default TasksPage;

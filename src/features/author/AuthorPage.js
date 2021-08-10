@@ -3,7 +3,7 @@ import Section from "../../common/Section";
 import Header from "../../common/Header";
 import AuthorText from "./AuthorText";
 
-const Author = () => (
+const AuthorPage = () => (
     <Container>
         <Header title="O autorze" />
         <Section
@@ -13,4 +13,4 @@ const Author = () => (
     </Container>
 );
 
-export default Author;
+export default AuthorPage;

@@ -7,7 +7,7 @@ import {
     fetchExampleTasks,
     setStateAsLoading,
     selectStatus,
-} from "../tasksSlice";
+} from "../../tasksSlice";
 import { StyledButtons, Button } from "./styled";
 
 const Buttons = ({ exampleTasksButton }) => {

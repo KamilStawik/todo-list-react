@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import { Link } from "react-router-dom";
 
 export const StyledTasks = styled.ul`
     background-color: hsl(0, 0%, 100%);
@@ -8,7 +9,7 @@ export const StyledTasks = styled.ul`
 `;
 
 export const ListItem = styled.li`
-    border-bottom: 1px solid ${({ theme }) => (theme.colors.backgroundColor)}px;
+    border-bottom: 1px solid ${({ theme }) => (theme.colors.backgroundColor)};
     margin-top: 15px;
     padding: 10px;
     display: flex;
@@ -55,4 +56,13 @@ export const Button = styled.button`
             filter: brightness(110%)
         }
     `} 
+`;
+
+export const StyledLink = styled(Link)`
+    text-decoration: none;
+    color: ${({ theme }) => (theme.colors.primaryColor)};
+    
+    &:hover {
+            filter: brightness(110%)
+        }
 `;

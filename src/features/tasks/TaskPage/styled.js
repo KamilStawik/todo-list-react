@@ -1,5 +1,5 @@
 import styled from "styled-components";
 
-export const BodyBox = styled.div`
+export const DoneStatusBox = styled.div`
     padding: 20px;
 `;

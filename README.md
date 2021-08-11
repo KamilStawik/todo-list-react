@@ -4,7 +4,7 @@
 
 [To-do-list by Kamil](https://kamilstawik.github.io/todo-list-react/)
 
-![Project screenshot1](/images/screenshot1.jpg)
+![Project screenshot1](/images/screenshot2.jpg)
 
 ## About me
 
@@ -13,20 +13,19 @@ Hi! My name is Kamil. At the begining of 2021 I had a briliant idea. I started t
 ## About this project
 
 This is my third study project - Task List.
-I applied basic capabilities adding, removing and marking tasks as done.
-Also two new buttons: hide all done tasks and mark all tasks as done.
+I applied basic capabilities adding, removing and marking tasks as done. Also user can hide all done tasks, mark all tasks as done and get example tasks. The latest feature is searching tasks. Additionally, application automatically saves content in local storage.
 
 ## Technologies and conventions used in project:
 * HTML
 * CSS
-* javascript
+* JS/ES6+
 * React.js
+* [Create React App](https://github.com/facebook/create-react-app).
+* React Router
 * Redux
+* Redux-Saga
 * Styled-components
 * CamelCase
-* Immutability
-* [Create React App](https://github.com/facebook/create-react-app).
-
 
 ## Available Scripts
 

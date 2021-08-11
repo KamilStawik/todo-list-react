@@ -1,6 +1,6 @@
 import React from "react";
-import { HashRouter, NavLink, Link, Switch, Route, Redirect } from "react-router-dom";
-import { StyledNav, ListItem, UnorderedList, StyledLink } from "./styled.js";
+import { HashRouter, Switch, Route, Redirect } from "react-router-dom";
+import { ListItem, UnorderedList, StyledLink } from "./styled.js";
 import AuthorPage from "./features/author/AuthorPage.js";
 import TaskPage from "./features/tasks/TaskPage/index.js"
 import TasksPage from "./features/tasks/TasksPage/index.js"
@@ -10,10 +10,10 @@ const App = () => (
         <nav>
             <UnorderedList>
                 <ListItem>
-                    <NavLink activeClassName="active" to="/zadania">Zadania</NavLink>
+                    <StyledLink to="/zadania">Zadania</StyledLink>
                 </ListItem>
                 <ListItem>
-                    <Link to="/autor">O autorze</Link>
+                    <StyledLink to="/autor">O autorze</StyledLink>
                 </ListItem>
             </UnorderedList>
             <Switch>

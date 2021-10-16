@@ -7,7 +7,6 @@ import Section from "../../../common/Section";
 import Header from "../../../common/Header";
 
 const TaskPage = () => {
-
     const { id } = useParams();
     const task = useSelector(state => getTaskById(state, id));
 
@@ -25,6 +24,6 @@ const TaskPage = () => {
             />
         </Container>
     );
-}
+};
 
 export default TaskPage;

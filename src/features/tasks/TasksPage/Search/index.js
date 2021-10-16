@@ -23,6 +23,6 @@ const Search = () => {
             />
         </Wrapper>
     );
-}
+};
 
-export default Search
+export default Search;

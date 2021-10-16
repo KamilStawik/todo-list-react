@@ -8,11 +8,11 @@
 
 ## About me
 
-Hi! My name is Kamil. At the begining of 2021 I had a briliant idea. I started to lern programming. In future i would like to become a Frontend Developer.
+Hi! My name is Kamil. At the begining of 2021 I had a brilliant idea. I started to learn programming. Now I'm looking for my first job as a Frontend Developer.
 
 ## About this project
 
-This is my third study project - Task List.
+This is my third training project - Task List.
 I applied basic capabilities adding, removing and marking tasks as done. Also user can hide all done tasks, mark all tasks as done and get example tasks. The latest feature is searching tasks. Additionally, application automatically saves content in local storage.
 
 ## Technologies and conventions used in project:

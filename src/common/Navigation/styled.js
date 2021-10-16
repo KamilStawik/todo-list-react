@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 export const UnorderedList = styled.ul`
+    margin: 0px;
     background-color: ${({ theme }) => (theme.colors.primaryColor)};
     list-style: none;
     display: flex;
